@@ -1,27 +1,39 @@
 # AngDocker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 14.0.0.
 
-## Development server
+## Servidor de Desarrollo con Docker
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para ejecutar el servidor de desarrollo usando Docker, sigue estos pasos:
 
-## Code scaffolding
+1. **Construir y Levantar el Contenedor**:
+   Ejecuta `docker-compose up --build` en la raíz del proyecto. Esto construirá y levantará el contenedor Docker para la aplicación.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. **Acceso a la Aplicación**:
+   Navega a `http://localhost:7777/` en tu navegador. La aplicación Angular debería estar disponible en este puerto.
 
-## Build
+## Modificaciones en el Código Fuente
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Si realizas cambios en los archivos fuente, Docker Compose debería detectar estos cambios y reconstruir la aplicación automáticamente.
 
-## Running unit tests
+## Comandos Adicionales de Angular CLI
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Generar Componente**: Ejecuta `ng generate component component-name` para generar un nuevo componente.
+- **Otras Generaciones**: También puedes usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Running end-to-end tests
+## Construcción
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para construir el proyecto, usa `ng build`. Los artefactos de la construcción se almacenarán en el directorio `dist/`.
 
-## Further help
+## Pruebas Unitarias
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Ejecuta `ng test` para realizar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).
+
+## Pruebas de Extremo a Extremo
+
+Ejecuta `ng e2e` para realizar las pruebas de extremo a extremo a través de una plataforma de tu elección.
+
+## Ayuda Adicional
+
+Para obtener más ayuda sobre Angular CLI, utiliza `ng help` o visita la página [Angular CLI Overview and Command Reference](https://angular.io/cli).
+ the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
